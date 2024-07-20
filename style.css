@@ -1,0 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.multi,.sub,.addi,.divi,.equal{
+    background-image: linear-gradient( to bottom  , #b55d15, #cc731d );
+}

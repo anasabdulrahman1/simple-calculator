@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Calculator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main-ctr">
+        
+     <div class="container w-25 mt-5 cal-ctr">
+        <div class="calculator bg-dark p-3 rounded">
+            <div class="calculator-display text-right mb-3">
+                <input type="text" id="display" class="form-control text-right" disabled value="0">
+            </div>
+            <div class="calculator-keys">
+                <div class="row  my-2">
+                    <button id="Seven" class="btn mx-1 bg-dark btn-secondary col" onclick="displayNumber('7')">7</button>
+                    <button id="Eight" class="btn mx-1 bg-dark btn-secondary col" onclick="displayNumber('8')">8</button>
+                    <button id="Nine" class="btn mx-1 bg-dark btn-secondary col" onclick="displayNumber('9')">9</button>
+                    <button id="mul" class=" mx-1  multi col" class="opt" onclick="displayNumber('*')">&#215;</button>
+                </div>
+                <div class="row my-2">
+                    <button id="Four" class="btn mx-1 bg-dark btn-secondary col" onclick="displayNumber('4')">4</button>
+                    <button id="Five" class="btn mx-1 bg-dark btn-secondary col" onclick="displayNumber('5')">5</button>
+                    <button id="Six" class="btn mx-1 bg-dark btn-secondary col" onclick="displayNumber('6')">6</button>
+                    <button id="sub" class=" mx-1  sub col" class="opt" onclick="displayNumber('-')">&#8722;</button>
+                </div>
+                <div class="row my-2">
+                    <button id="One" class="btn mx-1 bg-dark btn-secondary col" onclick="displayNumber('1')">1</button>
+                    <button id="Two" class="btn mx-1 bg-dark btn-secondary col" onclick="displayNumber('2')">2</button>
+                    <button id="Three" class="btn mx-1 bg-dark btn-secondary col" onclick="displayNumber('3')">3</button>
+                    <button id="add" class=" mx-1  addi col" class="opt" onclick="displayNumber('+')">&#43;</button>
+                </div>
+                <div class="row my-2">
+                    <button id="doublezero" class="btn mx-1 bg-dark btn-secondary col" class="opt" onclick="displayNumber('00')">00</button>
+                    <button id="singlezero" class="btn mx-1 bg-dark btn-secondary col" class="opt" onclick="displayNumber('0')">0</button>
+                    <button id="div" class="btn mx-1 bg-dark btn-secondary col" class="opt" onclick="displayNumber('.')">.</button>
+                    <button id="add" class=" mx-1  divi col" class="opt" onclick="displayNumber('/')">&#247;</button>
+                    
+                </div>
+                <div class="row">
+                    <button class="btn mx-1 btn-success col" onclick="clearDisplay()">AC</button>
+                    <button class="btn mx-1 btn-danger col-4" onclick="deleteLast()">DEL</button>
+                    <button id="Equal" class=" mx-1 equal col" onclick="evaluateExp()" class="opt1">&#61;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./index.js"></script>
+    
+</body>
+</html>
+
